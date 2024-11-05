@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - pip install -r requirements.txt  # Adjust this if dependencies are listed elsewhere
+  build:
+    commands:
+      - echo Running tests and building the application...
+      - python -m unittest discover  # Adjust if using a different test runner
+      - python setup.py build  # Adjust if your build process is different
